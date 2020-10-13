@@ -93,7 +93,6 @@
   height: 25px;
 }
 
-
 .box2-container {
   z-index: 2;
   border-top-right-radius: 7px;
@@ -103,6 +102,17 @@
   height: 280px;
   width: 390px;
   background-color: rgb(52, 53, 54);
+  animation: box2 40s infinite;
+  /* animation-timing-function: steps(200); */
+}
+
+@keyframes box2 {
+  0% {
+    transform: translateX(-550px);
+  }
+  100% {
+    transform: translateX(1450px);
+  }
 }
 
 .box2-top {
@@ -125,6 +135,21 @@
   background-size: 9px 9px;
   background-position: 1px 4px, 2px 0px, 16px 9px, 17px 4px;
   z-index: 2;
+  transition-duration: 10s;
+  /* transition-property: all; */
+  /* transform: translateX(150px); */
+  /* transition: transform 10s linear; */
+  animation: box3 40s infinite;
+  /* animation-timing-function: steps(200); */
+}
+
+@keyframes box3 {
+  0% {
+    transform: translateX(-375px);
+  }
+  100% {
+    transform: translateX(1450px);
+  }
 }
 
 .brick-covering-top {
@@ -162,6 +187,22 @@
   width: 280px;
   background-color: rgb(25, 25, 42);
   z-index: 2;
+  animation: box4 50s infinite;
+  /* animation-timing-function: steps(200); */
+  left: -1550px;
+  /* transition: transform 5s linear; */
+  transition-duration: 10s;
+  transition-property: all;
+  transform: translateX(1050px);
+}
+
+@keyframes box4 {
+  0% {
+    transform: translateX(-1550px);
+  }
+  100% {
+    transform: translateX(1050px);
+  }
 }
 
 .box4-top {
@@ -172,7 +213,6 @@
   width: 290px;
   height: 35px;
 }
-
 
 .window-container {
   padding-top: 25px;
@@ -201,7 +241,7 @@
   border-radius: 5px;
   height: 45px;
   width: 30px;
-  background-color: rgba(35, 100, 200, .7);
+  background-color: rgba(35, 100, 200, 0.7);
 }
 
 .tree {
@@ -244,11 +284,10 @@
   top: -50px;
   left: 35px;
   position: relative;
-  height:20px;
-  width:20px;
+  height: 20px;
+  width: 20px;
   background-color: rgb(48, 36, 4);
 }
-
 
 .tinytree {
   position: absolute;
@@ -289,8 +328,8 @@
   top: 90px;
   left: 28px;
   position: relative;
-  height:20px;
-  width:20px;
+  height: 20px;
+  width: 20px;
   background-color: rgb(48, 36, 4);
 }
 
