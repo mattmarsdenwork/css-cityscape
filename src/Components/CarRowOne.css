@@ -10,15 +10,15 @@
   width: 200vw;
   justify-content: space-around;
   animation: carrowone 20s infinite;
-  animation-timing-function: steps(160);
+  /* animation-timing-function: steps(160); */
 }
 
 @keyframes carrowone {
   0% {
-    left: -1700px;
+    transform: translateX(-1700px);
   }
   100% {
-    left: 120px;
+    transform: translateX(120px);
   }
 }
 
@@ -31,18 +31,17 @@
   justify-content: space-around;
   justify-content: space-around;
   animation: carrowtwo 20s infinite;
-  animation-timing-function: steps(160);
+  /* animation-timing-function: steps(160); */
 }
 
 @keyframes carrowtwo {
   0% {
-    left: 120px;
+    transform: translateX(120px);
   }
   100% {
-    left: -1700px;
+    transform: translateX(1700px);
   }
 }
-
 
 .car-row-three {
   align-items: flex-end;
@@ -53,7 +52,7 @@
   flex-direction: row;
   justify-content: space-around;
   animation: carrowthree 25s infinite;
-  animation-timing-function: steps(160);
+  /* animation-timing-function: steps(160); */
 }
 
 .smallcar:nth-child(3) {
@@ -62,10 +61,10 @@
 
 @keyframes carrowthree {
   0% {
-    left: 450px;
+    transform: translateX(450px);
   }
   100% {
-    left: -1600px;
+    transform: translateX(-1600px);
   }
 }
 
@@ -78,7 +77,7 @@
   flex-direction: row;
   justify-content: space-around;
   animation: carrowfour 25s infinite;
-  animation-timing-function: steps(160);
+  /* animation-timing-function: steps(160); */
 }
 
 .copleft {
@@ -87,7 +86,7 @@
   width: 8px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  animation: copleft .5s infinite;
+  animation: copleft 0.5s infinite;
   left: 35px;
   top: px;
 }
@@ -98,7 +97,7 @@
   width: 8px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  animation: copright .5s infinite;
+  animation: copright 0.5s infinite;
   left: 30px;
   top: -8px;
 }
@@ -106,30 +105,30 @@
 @keyframes copleft {
   0% {
     background-color: red;
-    box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, .5);
+    box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, 0.5);
   }
   100% {
     background-color: blue;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .5);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, 0.5);
   }
 }
 
 @keyframes copright {
   0% {
     background-color: blue;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .5);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, 0.5);
   }
   100% {
     background-color: red;
-    box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, .5);
+    box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, 0.5);
   }
 }
 
 @keyframes carrowfour {
   0% {
-    left: -1650px;
+    transform: translateX(-1650px);
   }
   100% {
-    left: 450px;
+    transform: translateX(450px);
   }
 }

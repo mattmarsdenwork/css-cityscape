@@ -13,8 +13,7 @@ class Box2 extends Component {
 
     return (
         <div
-          className="box2-container"
-          onScroll={this.handleScroll}>
+          className="box2-container">
           <div className="box2-top"></div>
           <div className="window-container">
             {windowsHTML}
